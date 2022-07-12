@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pizza Order Form</title>
+    </head>
+    <body>
+        <h1>Pizza Order Form</h1>
+        <form action="order.php" method="GET">
+        <table>
+                <tr>
+                    <td><label for ="fname">First Name: </label></td>
+                    <td colspan="2"><input type="text" name="fname" id="fname"/></td>
+                </tr>
+                <tr>
+                    <td><label for ="lname">Last Name: </label></td>
+                    <td colspan="2"><input type="text" name="lname" id="lname"/></td>
+                </tr>
+                <tr>
+                    <td><label for ="emailadd">Email Address: </label></td>
+                    <td colspan="2"><input type="email" name="emailadd" id="emailadd"/></td>
+                </tr>
+                <tr>
+                    <td><label for ="contactno">Contact Number: </label></td>
+                    <td colspan="2"><input type="tel" name="contactno" id="contactno"/></td>
+                </tr>
+                <tr>
+                    <td><label for ="deldate">Preferred Delivery Date: </label></td>
+                    <td colspan="2"><input type="date" name="deldate" id="deldate"/></td>
+                </tr>
+                <tr>
+                    <td colspan="3">Size: </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="radio" name="rdosize1" id="rdosize1" value="Small"/> <label for ="rdosize1">Small</label>
+                        <input type="radio" name="rdosize2" id="rdosize2" value="Medium"/> <label for ="rdosize2">Medium</label>
+                        <input type="radio" name="rdosize3" id="rdosize3" value="Large"/> <label for ="rdosize3">Large</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">Flavor: </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="checkbox" name="chkhawaiian" id="chkhawaiian" value="Hawaiian"/> <label for ="chkhawaiian">Hawaiian (Php 150.00)</label></td>
+                    <td>
+                        <label for="qtyhawaiian"></label>
+                        <select name="qtyhawaiian" id="qtyhawaiian">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="checkbox" name="chkpepperoni" id="chkpepperoni" value="Pepperoni"/> <label for ="chkpepperoni">Pepperoni (Php 140.00)</label></td>
+                    <td>
+                        <label for ="qtypepperoni"></label>
+                        <select name="qtypepperoni" id="qtypepperoni">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="checkbox" name="chkveggie" id="chkveggie" value="Vegetable"/> <label for ="chkveggie">Vegetable (Php 130.00)</label></td>
+                    <td>
+                        <label for ="qtyveggie"></label>
+                        <select name="qtyveggie" id="qtyveggie">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for ="cardnumber">Credit Card Number: </label></td>
+                    <td colspan="2"><input type="text" name="cardnumber" id="cardnumber"/></td>
+                </tr>
+                <tr>
+                    <td><label for="pincode">PIN: </label></td>
+                    <td colspan="2"><input type="password" name="pincode" id="pincode"/></td>
+                </tr>
+                <tr>
+                    <td><label for="notes">Additional Note: </label></td>
+                    <td colspan="2"><textarea name="notes" id="notes"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><input type="submit" name="btnsubmit" id="btnsubmit" value="Submit Order"/></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
